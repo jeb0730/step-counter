@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              tools:context=".MainActivity" android:orientation="vertical"
+              android:gravity="center" tools:ignore="MissingClass">
+
+    <com.dinuscxj.progressbar.CircleProgressBar
+            android:id="@+id/cpb_circlebar"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            app:progress_text_size="50sp"
+            app:style="solid_line"
+            app:progress_stroke_width="20dp "
+            app:progress_stroke_cap="round"
+            app:progress_start_color="#FFBB00"
+            app:progress_end_color="#ABF200"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+            android:id="@+id/tv_weight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="몸무게: 65kg"
+            android:gravity="center"
+            android:textSize="24sp"/>
+    <Button
+            android:id="@+id/btn_plus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+"
+            android:gravity="center"
+    />
+
+    <Button
+            android:id="@+id/btn_minus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-"
+            android:gravity="center"
+    />
+
+
+    <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="운동한 시간: 00초"
+            android:gravity="center"
+            android:textSize="20sp"/>
+
+    <TextView
+            android:id="@+id/tv_kcal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="소비한 칼로리: 000 kcal"
+            android:gravity="center"
+            android:textSize="20sp"/>
+
+    <Button
+            android:id="@+id/btn_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="START"
+            android:gravity="center"
+    />
+
+    <Button
+            android:id="@+id/btn_stop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="STOP"
+            android:gravity="center"
+    />
+
+    <TextView
+            android:id="@+id/tv_step"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="60sp"
+            android:text="000"
+            android:gravity="center"
+    />
+
+
+</LinearLayout>
